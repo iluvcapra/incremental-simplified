@@ -11,6 +11,9 @@
 		83DC8D411F697DB5004861BF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DC8D401F697DB5004861BF /* Incremental.swift */; };
 		9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */; };
 		9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
+		9AD32A501FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
+		9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
+		9AD32A551FB8F29A00454125 /* IncrementalViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,9 @@
 		9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalTests.swift; sourceTree = "<group>"; };
 		9A40F0D51FB7E1D600FADCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalViewController.swift; sourceTree = "<group>"; };
+		9AD32A531FB8E46600454125 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 				83DC8D3A1F697DA5004861BF /* Incremental.h */,
 				83DC8D3B1F697DA5004861BF /* Info.plist */,
 				83DC8D401F697DB5004861BF /* Incremental.swift */,
+				9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */,
 			);
 			path = Incremental;
 			sourceTree = "<group>";
@@ -70,6 +77,7 @@
 				83DC8D391F697DA5004861BF /* Incremental */,
 				9A40F0D21FB7E1D600FADCB5 /* IncrementalTests */,
 				83E47E071F56A04F00CF7E8B /* Products */,
+				9AD32A521FB8E46600454125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +95,17 @@
 			children = (
 				9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */,
 				9A40F0D51FB7E1D600FADCB5 /* Info.plist */,
+				9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */,
 			);
 			path = IncrementalTests;
+			sourceTree = "<group>";
+		};
+		9AD32A521FB8E46600454125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD32A531FB8E46600454125 /* AppKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DC8D411F697DB5004861BF /* Incremental.swift in Sources */,
+				9AD32A501FB8E10000454125 /* IncrementalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */,
+				9AD32A551FB8F29A00454125 /* IncrementalViewControllerTests.swift in Sources */,
+				9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
