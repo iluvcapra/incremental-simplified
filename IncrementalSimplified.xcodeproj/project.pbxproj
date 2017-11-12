@@ -19,6 +19,8 @@
 		9AD32A641FB90AEC00454125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD32A621FB90AEC00454125 /* Main.storyboard */; };
 		9AD32A701FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A6F1FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift */; };
 		9AD32A7B1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */; };
+		9AD32A881FB90B9500454125 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
+		9AD32A891FB90C7400454125 /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DC8D401F697DB5004861BF /* Incremental.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9AD32A591FB90AEC00454125;
 			remoteInfo = "IncrementalUI Test App";
+		};
+		9AD32A861FB90B7C00454125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E47DFE1F56A04F00CF7E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DC8D371F697DA5004861BF;
+			remoteInfo = Incremental;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -91,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD32A881FB90B9500454125 /* Incremental.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +267,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9AD32A871FB90B7C00454125 /* PBXTargetDependency */,
 			);
 			name = "IncrementalUI Test App";
 			productName = "IncrementalUI Test App";
@@ -410,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */,
+				9AD32A891FB90C7400454125 /* Incremental.swift in Sources */,
 				9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +468,11 @@
 			isa = PBXTargetDependency;
 			target = 9AD32A591FB90AEC00454125 /* IncrementalUI Test App */;
 			targetProxy = 9AD32A771FB90AEC00454125 /* PBXContainerItemProxy */;
+		};
+		9AD32A871FB90B7C00454125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83DC8D371F697DA5004861BF /* Incremental */;
+			targetProxy = 9AD32A861FB90B7C00454125 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

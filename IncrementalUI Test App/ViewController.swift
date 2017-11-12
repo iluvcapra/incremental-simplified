@@ -7,9 +7,9 @@
 //
 
 import Cocoa
+import Incremental
 
-class ViewController: NSViewController {
-
+class ViewController:  IViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 

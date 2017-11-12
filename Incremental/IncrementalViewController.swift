@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-final class IncrementalViewController : NSViewController {
+final class IViewController : NSViewController {
     
     class LinkResponder: NSObject {
         
