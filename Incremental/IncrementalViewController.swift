@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-final class IViewController : NSViewController {
+open class IViewController : NSViewController {
     
     class LinkResponder: NSObject {
         
