@@ -172,6 +172,9 @@ protocol AnyI: class {
     var strongReferences: Register<Any> { get set }
 }
 
+/**
+ A Var holds a variable and reports its mutation to observers
+ */
 public final class Var<A> {
     public let i: I<A>
     
@@ -181,6 +184,12 @@ public final class Var<A> {
     
     public func set(_ newValue: A) {
         i.write(newValue)
+    }
+    
+    public func set<T:Equatable>(keyPath p : WritableKeyPath<A,T>, to newValue: T) {
+        change { (this : inout A) in
+            this[keyPath: p] = newValue
+        }
     }
     
     public func change(_ by: (inout A) -> ()) {
@@ -354,11 +363,17 @@ public final class I<A>: AnyI, Node {
     }
     
     
+    public func map<T:Equatable>(_ p: WritableKeyPath<A,T>) -> I<T> {
+        return self.map { $0[keyPath: p] }
+    }
+    
+    
     func mutate(_ transform: (inout A) -> ()) {
         var newValue = value!
         transform(&newValue)
         write(newValue)
     }
+    
 }
 
 public func if_<A: Equatable>(_ condition: I<Bool>, then l: I<A>, else r: I<A>) -> I<A> {

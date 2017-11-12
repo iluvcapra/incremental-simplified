@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		83DC8D3C1F697DA5004861BF /* Incremental.h in Headers */ = {isa = PBXBuildFile; fileRef = 83DC8D3A1F697DA5004861BF /* Incremental.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83DC8D411F697DB5004861BF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DC8D401F697DB5004861BF /* Incremental.swift */; };
+		9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */; };
+		9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A40F0D71FB7E1D600FADCB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E47DFE1F56A04F00CF7E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DC8D371F697DA5004861BF;
+			remoteInfo = Incremental;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		83DC8D381F697DA5004861BF /* Incremental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Incremental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -17,6 +29,9 @@
 		83DC8D3B1F697DA5004861BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83DC8D401F697DB5004861BF /* Incremental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
 		83DC8D421F697E27004861BF /* Samples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Samples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalTests.swift; sourceTree = "<group>"; };
+		9A40F0D51FB7E1D600FADCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +39,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A40F0CE1FB7E1D600FADCB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +68,7 @@
 			children = (
 				83DC8D421F697E27004861BF /* Samples.playground */,
 				83DC8D391F697DA5004861BF /* Incremental */,
+				9A40F0D21FB7E1D600FADCB5 /* IncrementalTests */,
 				83E47E071F56A04F00CF7E8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,8 +77,18 @@
 			isa = PBXGroup;
 			children = (
 				83DC8D381F697DA5004861BF /* Incremental.framework */,
+				9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9A40F0D21FB7E1D600FADCB5 /* IncrementalTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */,
+				9A40F0D51FB7E1D600FADCB5 /* Info.plist */,
+			);
+			path = IncrementalTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,19 +123,41 @@
 			productReference = 83DC8D381F697DA5004861BF /* Incremental.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9A40F0D01FB7E1D600FADCB5 /* IncrementalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A40F0DB1FB7E1D600FADCB5 /* Build configuration list for PBXNativeTarget "IncrementalTests" */;
+			buildPhases = (
+				9A40F0CD1FB7E1D600FADCB5 /* Sources */,
+				9A40F0CE1FB7E1D600FADCB5 /* Frameworks */,
+				9A40F0CF1FB7E1D600FADCB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A40F0D81FB7E1D600FADCB5 /* PBXTargetDependency */,
+			);
+			name = IncrementalTests;
+			productName = IncrementalTests;
+			productReference = 9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83E47DFE1F56A04F00CF7E8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = objc.io;
 				TargetAttributes = {
 					83DC8D371F697DA5004861BF = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
+					};
+					9A40F0D01FB7E1D600FADCB5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -118,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				83DC8D371F697DA5004861BF /* Incremental */,
+				9A40F0D01FB7E1D600FADCB5 /* IncrementalTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		83DC8D361F697DA5004861BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A40F0CF1FB7E1D600FADCB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A40F0CD1FB7E1D600FADCB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A40F0D81FB7E1D600FADCB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83DC8D371F697DA5004861BF /* Incremental */;
+			targetProxy = 9A40F0D71FB7E1D600FADCB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		83DC8D3D1F697DA5004861BF /* Debug */ = {
@@ -301,6 +381,36 @@
 			};
 			name = Release;
 		};
+		9A40F0D91FB7E1D600FADCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IncrementalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundepartment.IncrementalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9A40F0DA1FB7E1D600FADCB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = IncrementalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soundepartment.IncrementalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -318,6 +428,15 @@
 			buildConfigurations = (
 				83E47E0B1F56A04F00CF7E8B /* Debug */,
 				83E47E0C1F56A04F00CF7E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A40F0DB1FB7E1D600FADCB5 /* Build configuration list for PBXNativeTarget "IncrementalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A40F0D91FB7E1D600FADCB5 /* Debug */,
+				9A40F0DA1FB7E1D600FADCB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
