@@ -11,7 +11,7 @@ import AppKit
 
 open class IViewController : NSViewController {
     
-    class LinkResponder: NSObject {
+    private class LinkResponder: NSObject {
         
         var action : (AnyObject?) -> () = {(sender) in return}
         
