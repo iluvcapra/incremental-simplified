@@ -13,7 +13,12 @@
 		9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
 		9AD32A501FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
 		9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
-		9AD32A551FB8F29A00454125 /* IncrementalViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */; };
+		9AD32A5D1FB90AEC00454125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */; };
+		9AD32A5F1FB90AEC00454125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A5E1FB90AEC00454125 /* ViewController.swift */; };
+		9AD32A611FB90AEC00454125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD32A601FB90AEC00454125 /* Assets.xcassets */; };
+		9AD32A641FB90AEC00454125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD32A621FB90AEC00454125 /* Main.storyboard */; };
+		9AD32A701FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A6F1FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift */; };
+		9AD32A7B1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 83DC8D371F697DA5004861BF;
 			remoteInfo = Incremental;
+		};
+		9AD32A6C1FB90AEC00454125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E47DFE1F56A04F00CF7E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD32A591FB90AEC00454125;
+			remoteInfo = "IncrementalUI Test App";
+		};
+		9AD32A771FB90AEC00454125 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E47DFE1F56A04F00CF7E8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD32A591FB90AEC00454125;
+			remoteInfo = "IncrementalUI Test App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,7 +56,19 @@
 		9A40F0D51FB7E1D600FADCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalViewController.swift; sourceTree = "<group>"; };
 		9AD32A531FB8E46600454125 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalViewControllerTests.swift; sourceTree = "<group>"; };
+		9AD32A5A1FB90AEC00454125 /* IncrementalUI Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncrementalUI Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AD32A5E1FB90AEC00454125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AD32A601FB90AEC00454125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AD32A631FB90AEC00454125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AD32A651FB90AEC00454125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD32A661FB90AEC00454125 /* IncrementalUI_Test_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IncrementalUI_Test_App.entitlements; sourceTree = "<group>"; };
+		9AD32A6B1FB90AEC00454125 /* IncrementalUI Test AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementalUI Test AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD32A6F1FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalUI_Test_AppTests.swift; sourceTree = "<group>"; };
+		9AD32A711FB90AEC00454125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD32A761FB90AEC00454125 /* IncrementalUI Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementalUI Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalUI_Test_AppUITests.swift; sourceTree = "<group>"; };
+		9AD32A7C1FB90AEC00454125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +84,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A571FB90AEC00454125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A681FB90AEC00454125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A731FB90AEC00454125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,9 @@
 				83DC8D421F697E27004861BF /* Samples.playground */,
 				83DC8D391F697DA5004861BF /* Incremental */,
 				9A40F0D21FB7E1D600FADCB5 /* IncrementalTests */,
+				9AD32A5B1FB90AEC00454125 /* IncrementalUI Test App */,
+				9AD32A6E1FB90AEC00454125 /* IncrementalUI Test AppTests */,
+				9AD32A791FB90AEC00454125 /* IncrementalUI Test AppUITests */,
 				83E47E071F56A04F00CF7E8B /* Products */,
 				9AD32A521FB8E46600454125 /* Frameworks */,
 			);
@@ -86,6 +141,9 @@
 			children = (
 				83DC8D381F697DA5004861BF /* Incremental.framework */,
 				9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */,
+				9AD32A5A1FB90AEC00454125 /* IncrementalUI Test App.app */,
+				9AD32A6B1FB90AEC00454125 /* IncrementalUI Test AppTests.xctest */,
+				9AD32A761FB90AEC00454125 /* IncrementalUI Test AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +153,6 @@
 			children = (
 				9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */,
 				9A40F0D51FB7E1D600FADCB5 /* Info.plist */,
-				9AD32A541FB8F29A00454125 /* IncrementalViewControllerTests.swift */,
 			);
 			path = IncrementalTests;
 			sourceTree = "<group>";
@@ -106,6 +163,37 @@
 				9AD32A531FB8E46600454125 /* AppKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AD32A5B1FB90AEC00454125 /* IncrementalUI Test App */ = {
+			isa = PBXGroup;
+			children = (
+				9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */,
+				9AD32A5E1FB90AEC00454125 /* ViewController.swift */,
+				9AD32A601FB90AEC00454125 /* Assets.xcassets */,
+				9AD32A621FB90AEC00454125 /* Main.storyboard */,
+				9AD32A651FB90AEC00454125 /* Info.plist */,
+				9AD32A661FB90AEC00454125 /* IncrementalUI_Test_App.entitlements */,
+			);
+			path = "IncrementalUI Test App";
+			sourceTree = "<group>";
+		};
+		9AD32A6E1FB90AEC00454125 /* IncrementalUI Test AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD32A6F1FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift */,
+				9AD32A711FB90AEC00454125 /* Info.plist */,
+			);
+			path = "IncrementalUI Test AppTests";
+			sourceTree = "<group>";
+		};
+		9AD32A791FB90AEC00454125 /* IncrementalUI Test AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */,
+				9AD32A7C1FB90AEC00454125 /* Info.plist */,
+			);
+			path = "IncrementalUI Test AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +246,59 @@
 			productReference = 9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9AD32A591FB90AEC00454125 /* IncrementalUI Test App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD32A7D1FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test App" */;
+			buildPhases = (
+				9AD32A561FB90AEC00454125 /* Sources */,
+				9AD32A571FB90AEC00454125 /* Frameworks */,
+				9AD32A581FB90AEC00454125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IncrementalUI Test App";
+			productName = "IncrementalUI Test App";
+			productReference = 9AD32A5A1FB90AEC00454125 /* IncrementalUI Test App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AD32A6A1FB90AEC00454125 /* IncrementalUI Test AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD32A801FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test AppTests" */;
+			buildPhases = (
+				9AD32A671FB90AEC00454125 /* Sources */,
+				9AD32A681FB90AEC00454125 /* Frameworks */,
+				9AD32A691FB90AEC00454125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD32A6D1FB90AEC00454125 /* PBXTargetDependency */,
+			);
+			name = "IncrementalUI Test AppTests";
+			productName = "IncrementalUI Test AppTests";
+			productReference = 9AD32A6B1FB90AEC00454125 /* IncrementalUI Test AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD32A751FB90AEC00454125 /* IncrementalUI Test AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD32A831FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test AppUITests" */;
+			buildPhases = (
+				9AD32A721FB90AEC00454125 /* Sources */,
+				9AD32A731FB90AEC00454125 /* Frameworks */,
+				9AD32A741FB90AEC00454125 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD32A781FB90AEC00454125 /* PBXTargetDependency */,
+			);
+			name = "IncrementalUI Test AppUITests";
+			productName = "IncrementalUI Test AppUITests";
+			productReference = 9AD32A761FB90AEC00454125 /* IncrementalUI Test AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +317,20 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					9AD32A591FB90AEC00454125 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					9AD32A6A1FB90AEC00454125 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AD32A591FB90AEC00454125;
+					};
+					9AD32A751FB90AEC00454125 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AD32A591FB90AEC00454125;
+					};
 				};
 			};
 			buildConfigurationList = 83E47E011F56A04F00CF7E8B /* Build configuration list for PBXProject "IncrementalSimplified" */;
@@ -184,6 +339,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 83E47DFD1F56A04F00CF7E8B;
 			productRefGroup = 83E47E071F56A04F00CF7E8B /* Products */;
@@ -192,6 +348,9 @@
 			targets = (
 				83DC8D371F697DA5004861BF /* Incremental */,
 				9A40F0D01FB7E1D600FADCB5 /* IncrementalTests */,
+				9AD32A591FB90AEC00454125 /* IncrementalUI Test App */,
+				9AD32A6A1FB90AEC00454125 /* IncrementalUI Test AppTests */,
+				9AD32A751FB90AEC00454125 /* IncrementalUI Test AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +364,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9A40F0CF1FB7E1D600FADCB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A581FB90AEC00454125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD32A611FB90AEC00454125 /* Assets.xcassets in Resources */,
+				9AD32A641FB90AEC00454125 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A691FB90AEC00454125 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A741FB90AEC00454125 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,8 +410,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */,
-				9AD32A551FB8F29A00454125 /* IncrementalViewControllerTests.swift in Sources */,
 				9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A561FB90AEC00454125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD32A5F1FB90AEC00454125 /* ViewController.swift in Sources */,
+				9AD32A5D1FB90AEC00454125 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A671FB90AEC00454125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD32A701FB90AEC00454125 /* IncrementalUI_Test_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD32A721FB90AEC00454125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD32A7B1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +447,28 @@
 			target = 83DC8D371F697DA5004861BF /* Incremental */;
 			targetProxy = 9A40F0D71FB7E1D600FADCB5 /* PBXContainerItemProxy */;
 		};
+		9AD32A6D1FB90AEC00454125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD32A591FB90AEC00454125 /* IncrementalUI Test App */;
+			targetProxy = 9AD32A6C1FB90AEC00454125 /* PBXContainerItemProxy */;
+		};
+		9AD32A781FB90AEC00454125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD32A591FB90AEC00454125 /* IncrementalUI Test App */;
+			targetProxy = 9AD32A771FB90AEC00454125 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AD32A621FB90AEC00454125 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD32A631FB90AEC00454125 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		83DC8D3D1F697DA5004861BF /* Debug */ = {
@@ -431,6 +658,110 @@
 			};
 			name = Release;
 		};
+		9AD32A7E1FB90AEC00454125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IncrementalUI Test App/IncrementalUI_Test_App.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9AD32A7F1FB90AEC00454125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IncrementalUI Test App/IncrementalUI_Test_App.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9AD32A811FB90AEC00454125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncrementalUI Test App.app/Contents/MacOS/IncrementalUI Test App";
+			};
+			name = Debug;
+		};
+		9AD32A821FB90AEC00454125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IncrementalUI Test App.app/Contents/MacOS/IncrementalUI Test App";
+			};
+			name = Release;
+		};
+		9AD32A841FB90AEC00454125 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "IncrementalUI Test App";
+			};
+			name = Debug;
+		};
+		9AD32A851FB90AEC00454125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "IncrementalUI Test AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soundepartment.IncrementalUI-Test-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "IncrementalUI Test App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +788,33 @@
 			buildConfigurations = (
 				9A40F0D91FB7E1D600FADCB5 /* Debug */,
 				9A40F0DA1FB7E1D600FADCB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD32A7D1FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD32A7E1FB90AEC00454125 /* Debug */,
+				9AD32A7F1FB90AEC00454125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD32A801FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD32A811FB90AEC00454125 /* Debug */,
+				9AD32A821FB90AEC00454125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD32A831FB90AEC00454125 /* Build configuration list for PBXNativeTarget "IncrementalUI Test AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD32A841FB90AEC00454125 /* Debug */,
+				9AD32A851FB90AEC00454125 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,6 +1,6 @@
 //
-//  IncrementalViewControllerTests.swift
-//  IncrementalTests
+//  IncrementalUI_Test_AppUITests.swift
+//  IncrementalUI Test AppUITests
 //
 //  Created by Jamie Hardt on 11/12/17.
 //  Copyright © 2017 objc.io. All rights reserved.
@@ -8,11 +8,11 @@
 
 import XCTest
 
-class IncrementalViewControllerTests: XCTestCase {
-    
+class IncrementalUI_Test_AppUITests: XCTestCase {
+        
     override func setUp() {
         super.setUp()
-       
+        
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -27,10 +27,10 @@ class IncrementalViewControllerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
+    
 }
