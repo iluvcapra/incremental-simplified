@@ -15,14 +15,27 @@ class ViewController: IViewController {
     @IBOutlet weak var winCountField: NSTextField!
     @IBOutlet weak var birthdateField: NSTextField!
     
+    @IBOutlet weak var ageField: NSTextField!
+    
     let person = Var<Person>(Person())
+    
+    var personAge : I<DateInterval>? = nil
+    var personAgeObseverCtx : Disposable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         bindI(incremental: person.i.map(\Person.name), to: nameField)
         bindI(incremental: person.i.map(\Person.winCount), to: winCountField)
-        bindI(date: person.i.map(\Person.birthdate), to: birthdateField)
+        bindI(incremental: person.i.map(\Person.birthdate), to: birthdateField)
+        
+        personAge = person.i.map { DateInterval(start: $0.birthdate, end:Date() )  }
+        
+        personAgeObseverCtx = personAge?.observe({ (d : DateInterval) in
+            self.ageField.objectValue = DateComponents(calendar: NSCalendar.autoupdatingCurrent,
+                                                       timeZone: TimeZone.autoupdatingCurrent,
+                                                       era: 0, year: nil, month: nil, day: nil, hour: nil, minute: nil, second: Int(d.duration), nanosecond: nil, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil)
+        })
         
     }
 

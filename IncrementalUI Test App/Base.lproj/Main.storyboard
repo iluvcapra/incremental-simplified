@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13528"/>
+        <capability name="cells containing NSDateComponentsFormatter" minSystemVersion="10.12"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -762,6 +763,28 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WVO-dO-rLp">
+                                <rect key="frame" x="18" y="147" width="28" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Age" id="jNW-3I-BcG">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-Sw-Ep5">
+                                <rect key="frame" x="110" y="144" width="228" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="EBS-za-VVu">
+                                    <dateComponentsFormatter key="formatter" unitsStyle="short" id="laA-XO-axd">
+                                        <calendarUnit key="allowedUnits" year="YES" month="YES"/>
+                                        <zeroFormattingBehavior key="zeroFormattingBehavior" none="YES"/>
+                                    </dateComponentsFormatter>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="tdH-K5-PnB" firstAttribute="baseline" secondItem="05h-Xn-XRd" secondAttribute="baseline" id="10F-Q3-Wdg"/>
@@ -783,6 +806,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ageField" destination="gBB-Sw-Ep5" id="nMC-Dr-Jux"/>
                         <outlet property="birthdateField" destination="tdH-K5-PnB" id="uxZ-4d-4r9"/>
                         <outlet property="nameField" destination="nNe-rI-kBT" id="fgc-qx-TZS"/>
                         <outlet property="winCountField" destination="70f-nE-22C" id="JH5-kQ-GT8"/>

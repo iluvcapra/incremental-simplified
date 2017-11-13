@@ -172,9 +172,6 @@ protocol AnyI: class {
     var strongReferences: Register<Any> { get set }
 }
 
-/**
- A Var holds a variable and reports its mutation to observers
- */
 public final class Var<A> {
     public let i: I<A>
     
@@ -356,12 +353,12 @@ public final class I<A>: AnyI, Node {
         }
     }
     
+    
     func mutate(_ transform: (inout A) -> ()) {
         var newValue = value!
         transform(&newValue)
         write(newValue)
     }
-    
 }
 
 public func if_<A: Equatable>(_ condition: I<Bool>, then l: I<A>, else r: I<A>) -> I<A> {
