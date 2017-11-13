@@ -9,7 +9,7 @@
 import Cocoa
 import Incremental
 
-class ViewController: IViewController {
+class ViewController: NSViewController {
     
     @IBOutlet weak var nameField: NSTextField!
     @IBOutlet weak var winCountField: NSTextField!

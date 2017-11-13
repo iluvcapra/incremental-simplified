@@ -13,8 +13,6 @@
 		9A0E03661FB97B1A003F982F /* IncrementalAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0E03641FB97B1A003F982F /* IncrementalAdditions.swift */; };
 		9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */; };
 		9A40F0D61FB7E1D600FADCB5 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
-		9AD32A501FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
-		9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */; };
 		9AD32A5D1FB90AEC00454125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */; };
 		9AD32A5F1FB90AEC00454125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A5E1FB90AEC00454125 /* ViewController.swift */; };
 		9AD32A611FB90AEC00454125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD32A601FB90AEC00454125 /* Assets.xcassets */; };
@@ -67,7 +65,6 @@
 		9A40F0D11FB7E1D600FADCB5 /* IncrementalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A40F0D31FB7E1D600FADCB5 /* IncrementalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalTests.swift; sourceTree = "<group>"; };
 		9A40F0D51FB7E1D600FADCB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalViewController.swift; sourceTree = "<group>"; };
 		9AD32A531FB8E46600454125 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		9AD32A5A1FB90AEC00454125 /* IncrementalUI Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IncrementalUI Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,7 +131,6 @@
 				83DC8D3B1F697DA5004861BF /* Info.plist */,
 				83DC8D401F697DB5004861BF /* Incremental.swift */,
 				9A0E03641FB97B1A003F982F /* IncrementalAdditions.swift */,
-				9AD32A4F1FB8E10000454125 /* IncrementalViewController.swift */,
 			);
 			path = Incremental;
 			sourceTree = "<group>";
@@ -422,7 +418,6 @@
 			files = (
 				9A0E03651FB97B1A003F982F /* IncrementalAdditions.swift in Sources */,
 				83DC8D411F697DB5004861BF /* Incremental.swift in Sources */,
-				9AD32A501FB8E10000454125 /* IncrementalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +428,6 @@
 				9A40F0D41FB7E1D600FADCB5 /* IncrementalTests.swift in Sources */,
 				9AD32A891FB90C7400454125 /* Incremental.swift in Sources */,
 				9A0E03661FB97B1A003F982F /* IncrementalAdditions.swift in Sources */,
-				9AD32A511FB8E10000454125 /* IncrementalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
