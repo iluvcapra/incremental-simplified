@@ -183,12 +183,12 @@
 			isa = PBXGroup;
 			children = (
 				9AD32A5C1FB90AEC00454125 /* AppDelegate.swift */,
+				9AD32A8C1FB9163700454125 /* Person.swift */,
 				9AD32A5E1FB90AEC00454125 /* ViewController.swift */,
 				9AD32A601FB90AEC00454125 /* Assets.xcassets */,
 				9AD32A621FB90AEC00454125 /* Main.storyboard */,
 				9AD32A651FB90AEC00454125 /* Info.plist */,
 				9AD32A661FB90AEC00454125 /* IncrementalUI_Test_App.entitlements */,
-				9AD32A8C1FB9163700454125 /* Person.swift */,
 			);
 			path = "IncrementalUI Test App";
 			sourceTree = "<group>";
