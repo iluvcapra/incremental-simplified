@@ -80,6 +80,7 @@
 		9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalUI_Test_AppUITests.swift; sourceTree = "<group>"; };
 		9AD32A7C1FB90AEC00454125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD32A8C1FB9163700454125 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9AD32A8E1FB9218000454125 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		83E47DFD1F56A04F00CF7E8B = {
 			isa = PBXGroup;
 			children = (
+				9AD32A8E1FB9218000454125 /* readme.md */,
 				83DC8D421F697E27004861BF /* Samples.playground */,
 				83DC8D391F697DA5004861BF /* Incremental */,
 				9A40F0D21FB7E1D600FADCB5 /* IncrementalTests */,
