@@ -21,6 +21,7 @@
 		9AD32A7B1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */; };
 		9AD32A881FB90B9500454125 /* Incremental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DC8D381F697DA5004861BF /* Incremental.framework */; };
 		9AD32A891FB90C7400454125 /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DC8D401F697DB5004861BF /* Incremental.swift */; };
+		9AD32A8D1FB9163700454125 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD32A8C1FB9163700454125 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		9AD32A761FB90AEC00454125 /* IncrementalUI Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IncrementalUI Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD32A7A1FB90AEC00454125 /* IncrementalUI_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementalUI_Test_AppUITests.swift; sourceTree = "<group>"; };
 		9AD32A7C1FB90AEC00454125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD32A8C1FB9163700454125 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				9AD32A621FB90AEC00454125 /* Main.storyboard */,
 				9AD32A651FB90AEC00454125 /* Info.plist */,
 				9AD32A661FB90AEC00454125 /* IncrementalUI_Test_App.entitlements */,
+				9AD32A8C1FB9163700454125 /* Person.swift */,
 			);
 			path = "IncrementalUI Test App";
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD32A8D1FB9163700454125 /* Person.swift in Sources */,
 				9AD32A5F1FB90AEC00454125 /* ViewController.swift in Sources */,
 				9AD32A5D1FB90AEC00454125 /* AppDelegate.swift in Sources */,
 			);

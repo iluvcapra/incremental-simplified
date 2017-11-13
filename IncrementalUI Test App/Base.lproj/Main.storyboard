@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13528"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="IncrementalUI_Test_App" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -688,7 +689,7 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -703,11 +704,89 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="IncrementalUI_Test_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-rI-kBT">
+                                <rect key="frame" x="110" y="228" width="228" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="J22-Kf-bge">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-UR-HW5">
+                                <rect key="frame" x="18" y="231" width="40" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="Atq-wN-fO8">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70f-nE-22C">
+                                <rect key="frame" x="110" y="200" width="228" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="eKc-Bw-ifm"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="6Ch-Ye-aL2">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="0" maximumIntegerDigits="42" id="Me1-5L-adq"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g1Y-1Q-g88">
+                                <rect key="frame" x="18" y="203" width="68" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Win Count" id="DE8-5n-4ax">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tdH-K5-PnB">
+                                <rect key="frame" x="110" y="173" width="228" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="bre-Y3-inQ">
+                                    <dateFormatter key="formatter" dateStyle="short" timeStyle="long" id="p3F-ho-zdt"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="05h-Xn-XRd">
+                                <rect key="frame" x="18" y="176" width="61" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Birthdate" id="WsR-iP-LGd">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tdH-K5-PnB" firstAttribute="baseline" secondItem="05h-Xn-XRd" secondAttribute="baseline" id="10F-Q3-Wdg"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="baseline" secondItem="g1Y-1Q-g88" secondAttribute="baseline" id="2wF-Rr-XSK"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="05h-Xn-XRd" secondAttribute="trailing" constant="20" symbolic="YES" id="5zM-Bd-pYj"/>
+                            <constraint firstItem="tdH-K5-PnB" firstAttribute="leading" secondItem="nNe-rI-kBT" secondAttribute="leading" id="7VM-Ul-NCY"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="trailing" secondItem="tdH-K5-PnB" secondAttribute="trailing" id="7yx-DM-Zwe"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="top" secondItem="nNe-rI-kBT" secondAttribute="bottom" constant="6" id="GqE-QQ-6gW"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="leading" secondItem="nNe-rI-kBT" secondAttribute="leading" id="GuT-Nu-P9U"/>
+                            <constraint firstItem="g1Y-1Q-g88" firstAttribute="leading" secondItem="Ugn-UR-HW5" secondAttribute="leading" id="Hkf-cH-mu5"/>
+                            <constraint firstItem="nNe-rI-kBT" firstAttribute="baseline" secondItem="Ugn-UR-HW5" secondAttribute="baseline" id="NJM-w2-OP3"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="leading" secondItem="g1Y-1Q-g88" secondAttribute="trailing" constant="26" id="V9U-vq-Oer"/>
+                            <constraint firstItem="Ugn-UR-HW5" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="WlV-ol-wfx"/>
+                            <constraint firstItem="tdH-K5-PnB" firstAttribute="top" secondItem="70f-nE-22C" secondAttribute="bottom" constant="5" id="cxa-sI-VeI"/>
+                            <constraint firstItem="Ugn-UR-HW5" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="mUd-rG-9o3"/>
+                            <constraint firstItem="70f-nE-22C" firstAttribute="trailing" secondItem="nNe-rI-kBT" secondAttribute="trailing" id="ph0-gr-1PR"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ugn-UR-HW5" secondAttribute="trailing" constant="20" symbolic="YES" id="sAI-to-ZSo"/>
+                            <constraint firstItem="05h-Xn-XRd" firstAttribute="leading" secondItem="Ugn-UR-HW5" secondAttribute="leading" id="tym-hd-Lzg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="birthdateField" destination="tdH-K5-PnB" id="uxZ-4d-4r9"/>
+                        <outlet property="nameField" destination="nNe-rI-kBT" id="fgc-qx-TZS"/>
+                        <outlet property="winCountField" destination="70f-nE-22C" id="JH5-kQ-GT8"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

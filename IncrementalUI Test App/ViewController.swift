@@ -10,10 +10,20 @@ import Cocoa
 import Incremental
 
 class ViewController: IViewController {
+    
+    @IBOutlet weak var nameField: NSTextField!
+    @IBOutlet weak var winCountField: NSTextField!
+    @IBOutlet weak var birthdateField: NSTextField!
+    
+    let person = Var<Person>(Person())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        bindI(incremental: person.i.map(\Person.name), to: nameField)
+        bindI(incremental: person.i.map(\Person.winCount), to: winCountField)
+        bindI(date: person.i.map(\Person.birthdate), to: birthdateField)
+        
     }
 
 //    override var representedObject: Any? {

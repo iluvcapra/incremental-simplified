@@ -31,36 +31,52 @@ open class IViewController : NSViewController {
     
     var disposables : [Disposable] = []
     
-    func link<A:AnyObject>(incremental :I<A> , to control : NSControl) {
+    public func bindI(incremental :I<String> , to control : NSControl) {
         let d = incremental.observe {
+            control.stringValue = $0
+        }
+        
+        disposables.append(d)
+    }
+    
+    public func bindI(incremental :I<Int> , to control : NSControl) {
+        let d = incremental.observe {
+            control.integerValue = $0
+        }
+        
+        disposables.append(d)
+    }
+    
+    public func bindI(date date_i: I<Date>, to control : NSControl) {
+        let d = date_i.observe {
             control.objectValue = $0
         }
         
         disposables.append(d)
     }
     
-    func link(valueOf control : NSControl, to v : Var<String>) {
+    public func bindI(valueOf control : NSControl, to v : Var<String>) {
         self.addResponder(control: control) { (sender) in
             guard let s = sender as? NSControl else { return }
             v.set(s.stringValue)
         }
     }
     
-    func link(valueOf control : NSControl, to v : Var<Int>) {
+    public func bindI(valueOf control : NSControl, to v : Var<Int>) {
         self.addResponder(control: control) { (sender) in
             guard let s = sender as? NSControl else { return }
             v.set(s.integerValue)
         }
     }
     
-    func link(valueOf control : NSControl, to v : Var<Double>) {
+    public func bindI(valueOf control : NSControl, to v : Var<Double>) {
         self.addResponder(control: control) { (sender) in
             guard let s = sender as? NSControl else { return }
             v.set(s.doubleValue)
         }
     }
     
-    func link(valueOf control : NSControl, to v : Var<Float>) {
+    public func bindI(valueOf control : NSControl, to v : Var<Float>) {
         self.addResponder(control: control) { (sender) in
             guard let s = sender as? NSControl else { return }
             v.set(s.floatValue)
