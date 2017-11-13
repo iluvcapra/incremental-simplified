@@ -186,12 +186,6 @@ public final class Var<A> {
         i.write(newValue)
     }
     
-    public func set<T:Equatable>(keyPath p : WritableKeyPath<A,T>, to newValue: T) {
-        change { (this : inout A) in
-            this[keyPath: p] = newValue
-        }
-    }
-    
     public func change(_ by: (inout A) -> ()) {
         var copy = i.value!
         by(&copy)
@@ -361,12 +355,6 @@ public final class I<A>: AnyI, Node {
             }
         }
     }
-    
-    
-    public func map<T:Equatable>(_ p: WritableKeyPath<A,T>) -> I<T> {
-        return self.map { $0[keyPath: p] }
-    }
-    
     
     func mutate(_ transform: (inout A) -> ()) {
         var newValue = value!
