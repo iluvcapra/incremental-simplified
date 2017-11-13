@@ -9,12 +9,18 @@
 import Foundation
 
 extension I {
-    public func map<T:Equatable>(_ p: WritableKeyPath<A,T>) -> I<T> {
-        return self.map { $0[keyPath: p] }
+    /**
+     Creates a I based on a keypath.
+     */
+    public func map<T:Equatable>(_ path: WritableKeyPath<A,T>) -> I<T> {
+        return self.map { $0[keyPath: path] }
     }
 }
 
 extension Var {
+    /**
+     Set a key or keypath on this Var
+     */
     public func set<T:Equatable>(keyPath p : WritableKeyPath<A,T>, to newValue: T) {
         change { (this : inout A) in
             this[keyPath: p] = newValue
