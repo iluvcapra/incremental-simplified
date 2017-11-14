@@ -17,6 +17,7 @@ private class DisposableResponder {
 }
 
 public class VarController<A: Equatable> {
+ 
     public var content : Var<A>
     private var disposables : [Any] = []
     
@@ -32,32 +33,28 @@ public class VarController<A: Equatable> {
         content.set(keyPath: kp, to: newValue)
     }
     
+    public func bind<T:Equatable>(keyPath p: WritableKeyPath<A,T>,
+                                  toObjectValueOf control : NSControl, withFallback fallbackValue : T) {
+        
+        observe(incremental: content.i.map(p), writeTo: control)
+        respond(to: control) { [weak self] (_) in
+            if let validObjectValue = control.objectValue as? T {
+                self?.set(keyPath: p, to: validObjectValue)
+            } else {
+                self?.set(keyPath: p, to: fallbackValue)
+            }
+            
+        }
+        
+    }
+
     private func respond(to control : NSControl, action a : @escaping (AnyObject?) -> () ) {
         let responder  = DisposableResponder(action: a)
         disposables.append(responder)
     }
     
-}
-
-extension VarController {
-    
-    private func observe(incremental i : I<String>, writeTo control : NSControl) {
-        let d = i.observe { control.stringValue = $0 }
-        disposables.append(d)
-    }
-    
-    private func observe(incremental i : I<Int>, writeTo control : NSControl) {
-        let d = i.observe { control.integerValue = $0 }
-        disposables.append(d)
-    }
-    
-    private func observe(incremental i : I<Float>, writeTo control : NSControl) {
-        let d = i.observe { control.floatValue = $0 }
-        disposables.append(d)
-    }
-    
-    private func observe(incremental i : I<Double>, writeTo control : NSControl) {
-        let d = i.observe { control.doubleValue = $0 }
+    private func observe<T:Equatable>(incremental i : I<T>, writeTo control : NSControl) {
+        let d = i.observe { control.objectValue = $0 }
         disposables.append(d)
     }
 }

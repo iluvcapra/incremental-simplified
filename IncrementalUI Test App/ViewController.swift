@@ -17,16 +17,15 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var ageField: NSTextField!
     
-    let person = Var<Person>(Person())
-    
-    var personAge : I<DateInterval>? = nil
-    var personAgeObseverCtx : Disposable?
+    let personController = VarController<Person>(value: Person())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        })
         
+        personController.bind(keyPath: \Person.name, toObjectValueOf: nameField, withFallback: "No Name")
+        personController.bind(keyPath: \Person.winCount, toObjectValueOf: winCountField, withFallback: 0)
+        
+
     }
 
 //    override var representedObject: Any? {
