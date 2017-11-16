@@ -47,15 +47,15 @@ public class VarController<A: Equatable> {
         }
         
     }
+    
+    public func observe<T:Equatable>(incremental i : I<T>, writeTo control : NSControl) {
+        let d = i.observe { control.objectValue = $0 }
+        disposables.append(d)
+    }
 
     private func respond(to control : NSControl, action a : @escaping (AnyObject?) -> () ) {
         let responder  = DisposableResponder(action: a)
         disposables.append(responder)
-    }
-    
-    private func observe<T:Equatable>(incremental i : I<T>, writeTo control : NSControl) {
-        let d = i.observe { control.objectValue = $0 }
-        disposables.append(d)
     }
 }
 
