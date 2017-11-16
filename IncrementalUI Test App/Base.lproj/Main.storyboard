@@ -775,7 +775,7 @@
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gBB-Sw-Ep5">
                                 <rect key="frame" x="110" y="144" width="228" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="EBS-za-VVu">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="EBS-za-VVu">
                                     <dateComponentsFormatter key="formatter" unitsStyle="short" id="laA-XO-axd">
                                         <calendarUnit key="allowedUnits" year="YES" month="YES"/>
                                         <zeroFormattingBehavior key="zeroFormattingBehavior" none="YES"/>
