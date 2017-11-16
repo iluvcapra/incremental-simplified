@@ -13,13 +13,17 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var nameField: NSTextField!
     @IBOutlet weak var winCountField: NSTextField!
-    @IBOutlet weak var birthdateField: NSTextField!
+    @IBOutlet weak var birthdateField: NSDatePicker!
     
     @IBOutlet weak var ageField: NSTextField!
     
     let personController = VarController<Person>(value: Person())
     
-    var age : I<TimeInterval>? = nil
+    @IBOutlet weak var xField: NSTextField!
+    @IBOutlet weak var yField: NSTextField!
+    @IBOutlet weak var zField: NSTextField!
+    
+    let sumController = VarController<Summation>(value: Summation())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,10 @@ class ViewController: NSViewController {
         personController.bind(keyPath: \Person.birthdate, toObjectValueOf: birthdateField, withFallback: Date() )
         
         personController.bind(keyPath: \Person.age, toObjectValueOf: ageField, withFallback: TimeInterval(0.0))
+        
+        sumController.bind(keyPath: \Summation.eks, toObjectValueOf: xField, withFallback: 0)
+        sumController.bind(keyPath: \Summation.why, toObjectValueOf: yField, withFallback: 0)
+        sumController.bind(keyPath: \Summation.zed, toObjectValueOf: zField, withFallback: 0)
     }
 
 //    override var representedObject: Any? {

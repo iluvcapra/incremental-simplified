@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Person : NSObject {
+struct Person: Equatable  {
     var name = "New Person"
     var winCount = 5
     var birthdate = Date(timeIntervalSince1970: 0)
@@ -27,5 +27,24 @@ class Person : NSObject {
         return lhs.name == rhs.name &&
             lhs.winCount == rhs.winCount &&
             lhs.birthdate == rhs.birthdate
+    }
+}
+
+
+struct Summation: Equatable {
+    var eks : Int = 0
+    var why : Int = 0
+    
+    var zed : Int {
+        get {
+            return eks + why
+        }
+        set(val) {
+            why = val - eks
+        }
+    }
+    
+    static func ==(lhs : Summation, rhs: Summation) -> Bool {
+        return lhs.eks == rhs.eks && lhs.why == rhs.why
     }
 }

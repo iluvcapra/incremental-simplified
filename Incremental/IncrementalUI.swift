@@ -14,6 +14,10 @@ private class DisposableResponder {
     init(action a : @escaping (AnyObject?) -> ()) {
         action = a
     }
+    
+    @objc func respond(_ sender : AnyObject?) {
+        action(sender)
+    }
 }
 
 public class VarController<A: Equatable> {
@@ -49,12 +53,16 @@ public class VarController<A: Equatable> {
     }
     
     public func observe<T:Equatable>(incremental i : I<T>, writeTo control : NSControl) {
-        let d = i.observe { control.objectValue = $0 }
+        let d = i.observe {
+            control.objectValue = $0
+        }
         disposables.append(d)
     }
 
     private func respond(to control : NSControl, action a : @escaping (AnyObject?) -> () ) {
         let responder  = DisposableResponder(action: a)
+        control.target = responder
+        control.action = #selector(DisposableResponder.respond(_:))
         disposables.append(responder)
     }
 }
