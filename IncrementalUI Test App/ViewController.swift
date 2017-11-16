@@ -26,7 +26,9 @@ class ViewController: NSViewController {
         
         personController.bind(keyPath: \Person.name, toObjectValueOf: nameField, withFallback: "No Name")
         personController.bind(keyPath: \Person.winCount, toObjectValueOf: winCountField, withFallback: 0)
-        personController.bind(keyPath: \Person.birthdate, toObjectValueOf: birthdateField, withFallback: Date() )        
+        personController.bind(keyPath: \Person.birthdate, toObjectValueOf: birthdateField, withFallback: Date() )
+        
+        personController.bind(keyPath: \Person.age, toObjectValueOf: ageField, withFallback: TimeInterval(0.0))
     }
 
 //    override var representedObject: Any? {
